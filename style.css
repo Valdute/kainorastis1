@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #8f4eb6, #5f62c3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 800px;
+}
+
+.card {
+    text-align: center;
+    padding: 20px;
+    width: calc(33.33% - 20px);
+    margin: 10px;
+    background-color: #ac99ff63;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+    margin-bottom: 15px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 15px;
+}
+
+.card ul li {
+    margin-bottom: 5px;
+}
+
+.card p {
+    font-size: 18px;
+    color: #333;
+}
+
+.card p:last-child {
+    font-size: 18px; /* Vienodas dydis visoms kainoms */
+    font-weight: bold;
+    color: black;
+    background-color: #e8e545;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.card:nth-child(2) {
+    width: calc(33.33% - 20px) + 20px;
+    margin: 0 5px;
+    padding: 20px;
+    transform: translateY(-10px);
+    background-color: #ac99ff63;
+}
+
+.card:nth-child(2) h2 {
+    color: white;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.card:nth-child(2) p:last-child {
+    background-color: #e8e545;
+}
+
+.card:nth-child(2) p:last-child:before {
+    /* content: " ⭐️ Best Deal ⭐️ "; */
+    font-size: 12px;
+    margin-right: 5px;
+}
